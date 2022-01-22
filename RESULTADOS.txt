@@ -1,0 +1,34 @@
+Ficheros de C++
+k-mer13
+Start
+Number of generated k-mers: 67108864
+Finish!
+
+real	0m0,713s
+user	0m0,710s
+sys	0m0,002s
+k-mer14
+Start
+Number of generated k-mers: 268435456
+Finish!
+
+real	0m2,915s
+user	0m2,911s
+sys	0m0,000s
+Ficheros de Python
+k-mer13
+Start
+Number of generated k-mers: 67108864
+Finish!
+
+real	1m48,353s
+user	1m48,172s
+sys	0m0,008s
+k-mer14
+Start
+Number of generated k-mers: 268435456
+Finish!
+
+real	6m34,624s
+user	6m34,033s
+sys	0m0,004s
