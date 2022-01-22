@@ -1,0 +1,31 @@
+#!/bin/bash
+#
+#SBATCH -p hpc-bio-pacioli
+#SBATCH --chdir=/home/alumno20/lab5-container
+#SBATCH --cpus-per-task=1 # Set XX to 1 to run a sequential application. Set XX to 26 to reserve the full node.
+#SBATCH --output=output_Eval_singularity.sh
+#SBATCH -J Lab5_singularity
+#SBATCH --mail-type=END #END/START/NONE
+#SBATCH --mail-user=manuel.pinero1@um.es   #END/START/NONE
+
+module add singularity/3.8.0
+
+echo 'A) C++ k-mer13'
+
+time /nas/hdd-0/singularity_images/python_3-9-1.sif ./data/k-mer13
+
+echo 'B) C++ k-mer14'
+
+time /nas/hdd-0/singularity_images/python_3-9-1.sif ./data/k-mer14
+
+echo 'C) Python k-mer13'
+
+time /nas/hdd-0/singularity_images/python_3-9-1.sif ./data/k-mer13.py
+
+echo 'C) Python k-mer14'
+
+time /nas/hdd-0/singularity_images/python_3-9-1.sif ./data/k-mer14.py
+
+
+module unload singularity/3.8.0
+
